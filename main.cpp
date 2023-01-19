@@ -1,10 +1,11 @@
 /*
-    Cmake Project Template
+    Aether Engine
+
     Author: Junzhe
  */
-#include <cstdio>
+
 #include "dependencies/lib/lib.h"
 
 int main() {
-    printf("Hello, world");
+    PPM_example();
 }
