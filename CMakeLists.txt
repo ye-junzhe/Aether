@@ -16,7 +16,9 @@ include_directories(/usr/local/include)
 include_directories(/opt/homebrew/Cellar/eigen/3.4.0_1/include)
 
 # The name of the gernerated executable
-add_executable(${ProjectId} ${CMAKE_CURRENT_SOURCE_DIR} main.cpp)
+# add_subdirectory(dependencies/lib) # another way of adding executable, but needs another CmakeLists.txt in that dir
+file(GLOB_RECURSE MY_SOURCES "dependencies/lib/*.cpp")
+add_executable(${ProjectId} ${CMAKE_CURRENT_SOURCE_DIR} main.cpp ${MY_SOURCES})
 
 # find package
 # dont how it works yet
