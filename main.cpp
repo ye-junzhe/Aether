@@ -4,7 +4,7 @@
     Author: Junzhe
  */
 
-#include "dependencies/lib/lib.h"
+#include "dependencies/include/lib.h"
 
 int main() {
     PPM_example();
